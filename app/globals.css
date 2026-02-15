@@ -1,0 +1,183 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  
+  /* Design System Colors */
+  --primary: #003c54;
+  --secondary: #dfbf7f;
+  --text-light: #e8e8e8;
+  --text-dark: #003c54;
+  --bg-dark: #242424;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Custom Fonts - Gravesend Sans */
+@font-face {
+  font-family: 'Gravesend Sans';
+  src: url('/fonts/gravesend-sans-light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gravesend Sans';
+  src: url('/fonts/gravesend-sans-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Custom Fonts - Helvetica Neue */
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/HelveticaNeueLight.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/HelveticaNeueMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/HelveticaNeue-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Custom Fonts - Proforma */
+@font-face {
+  font-family: 'Proforma';
+  src: url('/fonts/Proforma-Regular+.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Custom Fonts - Celine Sans */
+@font-face {
+  font-family: 'Celine Sans Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Celine Sans Regular'), url('/fonts/celinesans.woff') format('woff');
+  font-display: swap;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default margins */
+* {
+  box-sizing: border-box;
+}
+
+/* Celine Sans Typography System */
+.celine-h1 {
+  font-family: 'Celine Sans Regular', sans-serif;
+  font-size: 168px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.04em;
+}
+
+.celine-h2 {
+  font-family: 'Celine Sans Regular', sans-serif;
+  font-size: 84px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.04em;
+}
+
+.celine-h3 {
+  font-family: 'Celine Sans Regular', sans-serif;
+  font-size: 78px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.04em;
+}
+
+.celine-h4 {
+  font-family: 'Celine Sans Regular', sans-serif;
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0.04em;
+}
+
+.celine-h5 {
+  font-family: 'Celine Sans Regular', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0.04em;
+}
+
+.celine-h6 {
+  font-family: 'Celine Sans Regular', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.04em;
+}
+
+.celine-text {
+  font-family: 'Celine Sans Regular', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.04em;
+}
+
+.proforma-medium {
+  font-family: 'Proforma', sans-serif;
+  font-weight: 500;
+}
+
+.proforma-400 {
+  font-family: 'Proforma', sans-serif;
+  font-weight: 400;
+}
+
+.map-chip {
+  background: #fff;
+  color: #003C54;
+  font-family: 'Proforma', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  border-radius: 9999px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+  padding: 8px 22px;
+  border: 2px solid #e5e7eb;
+  display: inline-block;
+  white-space: nowrap;
+}

@@ -49,13 +49,15 @@ export default function Footer() {
         <div className="flex flex-col gap-[60px] md:flex-row md:items-start md:justify-center md:gap-[80px]">
           {/* Logo + description — Figma: 424px wide, logo 128×128, gap 20px */}
           <div className="flex items-center gap-[40px] w-full md:w-[424px] md:flex-col md:items-start md:gap-[20px]">
-            <Image
-              src="/assets/logo/footer-logo.png"
-              alt="Serene Heights Logo"
-              width={128}
-              height={128}
-              className="w-[81px] h-[81px] shrink-0 md:w-[128px] md:h-[128px]"
-            />
+            <div className="w-[80px] h-[80px] md:mb-5 overflow-hidden shrink-0 md:w-[120px] md:h-[120px]">
+              <Image
+                src="/assets/logo/serene-white-transp.png"
+                alt="Serene Heights Logo"
+                width={128}
+                height={128}
+                className="w-full h-full object-fit"
+              />
+            </div>
             <p
               className="text-[#E8E8E8] text-[16px] leading-normal"
               style={{ fontFamily: '"Helvetica Neue", Arial, sans-serif', fontWeight: 400 }}

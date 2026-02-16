@@ -82,6 +82,9 @@ export default function ImageWithTextSection({
             </p>
           </div>
         </div>
+        
+        {/* Divider Bar - centered, on top of images */}
+        <div className="absolute top-[400px] left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-[14px] h-[230px] bg-primary rotate-90 md:top-1/2 md:rotate-0 md:h-[230px] md:w-[14px]" />
       </div>
     </section>
   );

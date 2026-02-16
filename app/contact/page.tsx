@@ -94,11 +94,11 @@ export default function ContactPage() {
           {/* Logo on Top/Left */}
           <div className="flex items-start md:items-end mb-auto md:mb-0">
             <Image
-              src="/assets/logo/footer-logo.png"
+              src="/assets/logo/serene-white-transp.png"
               alt="Serene Heights"
-              width={180}
-              height={180}
-              className="w-24 md:w-40 lg:w-48 h-auto"
+              width={140}
+              height={140}
+              className="w-24 md:w-40 h-auto"
             />
           </div>
 

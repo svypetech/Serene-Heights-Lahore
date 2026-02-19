@@ -12,7 +12,7 @@ export default function Home() {
         {/* Top Section - Background with Logo and Text */}
         <div className="h-[55vh]">
           <HeroSection 
-            showLogo={true}
+            showLogo={false}
             heading="A NEW STANDARD OF"
             subheading="URBAN LIVING"
             fitParentHeight={true}
@@ -81,7 +81,7 @@ export default function Home() {
             OUR PROJECT<br />LOCATION
           </h2>
           <p className="proforma-medium text-[18px] leading-relaxed mb-2" style={{ color: '#dfbf7f' }}>
-            Strategically located on Gulberg Main Boulevard, this 17-story commercial high-rise sits
+            Strategically located on Gulberg Main Boulevard, this 19-story commercial high-rise sits
             <span className="text-white font-normal"> within walking distance of Lahore’s Central Business District, placing it at the centre of the city’s most active commercial zone.</span>
           </p>
         </div>
@@ -123,7 +123,7 @@ export default function Home() {
             <div className="celine-h5 text-white mb-4 project-overlay-title" style={{ letterSpacing: 0 }}>OUR PROJECT LOCATION</div>
             <div className="proforma-medium text-[18px] leading-relaxed project-overlay-desc">
               <span className="text-[#DFBF7F]">
-                Strategically located on Gulberg Main Boulevard, this 17-story commerical high-rise sits{" "}
+                Strategically located on Gulberg Main Boulevard, this 19-story commerical high-rise sits{" "}
               </span>
               <span className="text-white">
                 within walking distance of Lahore’s Central Business District, placing it at the centre of the city’s most active commercial zone.

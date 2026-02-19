@@ -38,13 +38,13 @@ commercial occupiers. With direct access from major arterial road and proximity 
               highlight: true,
             },
             {
-              text: "the building includes a ground level with 2-3 commercial floors, 3-4 parking floors,three office levels, two hotel apartment floors, and two uppermost floors dedicated to duplex penthouses",
+              text: "the building includes a ground level with 2-3 commercial floors, 4 parking floors, three office levels, two hotel apartment floors, and two uppermost floors dedicated to duplex penthouses",
               highlight: false,
             },
           ]}
           floorConfigs={[
             { label: "LOWER GROUND +3", description: "COMMERCIAL FLOORS" },
-            { label: "3-4", description: "PARKING FLOORS" },
+            { label: "4", description: "PARKING FLOORS" },
             { label: "2 FLOORS", description: "HOTEL APARTMENTS" },
             { label: "3 FLOORS", description: "MULTIPLE OFFICES" },
             { label: "TOP 2 FLOORS", description: "DUPLEX PENTHOUSES" },

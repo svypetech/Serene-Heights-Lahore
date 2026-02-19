@@ -62,7 +62,7 @@ export default function Footer() {
               className="text-[#E8E8E8] text-[16px] leading-normal"
               style={{ fontFamily: '"Helvetica Neue", Arial, sans-serif', fontWeight: 400 }}
             >
-              A landmark 17-storey mixed-use commercial development on Gulberg Main Boulevard, Lahore.
+              A landmark 19-storey mixed-use commercial development on Gulberg Main Boulevard, Lahore.
             </p>
           </div>
 

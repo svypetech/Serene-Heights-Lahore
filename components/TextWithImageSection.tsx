@@ -134,9 +134,11 @@ export default function TextWithImageSection({
 
         {/* Right Section - Image (bottom on mobile) */}
         <div className="relative w-full h-full md:h-auto">
-          <img
+          <Image
             src={imageUrl}
             alt={imageAlt}
+            width={1000}
+            height={1000}
             className="object-cover md:object-fill w-full h-screen md:h-full"
           />
         </div>

@@ -24,7 +24,8 @@ export default function OverlayImageWithTextSection({
         <Image
           src={backgroundImageUrl}
           alt={backgroundAlt}
-          fill
+          width={1000}
+          height={1000}
           className="object-cover object-center md:object-fill w-full h-screen md:h-full"
           priority
         />

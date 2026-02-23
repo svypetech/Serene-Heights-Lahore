@@ -17,7 +17,7 @@ export default function AmenitiesPage() {
             rgba(0, 60, 84, 0) 100%
           );
         }
-        @media (min-width: 1025px) {
+        @media (min-width: 1024px) {
           .section-04-gradient {
             background: linear-gradient(
               180deg,
@@ -25,14 +25,6 @@ export default function AmenitiesPage() {
               rgba(0, 60, 84, 0.9) 50%,
               rgba(0, 60, 84, 0) 100%
             );
-          }
-        }
-        @media (max-width: 1024px) {
-          .section-04-overlay-col {
-            position: absolute;
-            inset: 0;
-            z-index: 10;
-            pointer-events: none;
           }
         }
       `}</style>
@@ -125,11 +117,12 @@ export default function AmenitiesPage() {
           {/* Right image column */}
           <div className="relative w-full h-[400px] sm:h-[500px] md:h-auto md:min-h-[700px]">
             <Image
-              src="/assets/amenities/amenities-1.png"
+              src="/assets/amenities/amenities-1-new.png"
               alt="Amenities architecture illustration"
               fill
               className="object-cover object-center"
               priority
+              // sizes="(max-width: 1024px) 100vw, 40vw"
             />
           </div>
         </div>
@@ -208,8 +201,8 @@ export default function AmenitiesPage() {
       <section className="relative w-full">
         <div className="relative grid grid-cols-1 lg:grid-cols-5">
           {/* Left content - 40% */}
-          <div className="section-04-overlay-col lg:col-span-2 relative lg:static flex items-stretch order-2 lg:order-1">
-            <div className="section-04-gradient absolute lg:static inset-0 lg:inset-auto w-full lg:w-[570px] h-full lg:h-auto flex flex-col justify-start py-10 px-6 lg:py-[140px] lg:px-[68px] gap-7 lg:ml-[75px] z-10">
+          <div className="lg:col-span-2 absolute lg:static inset-0 z-10 pointer-events-none lg:pointer-events-auto flex items-stretch order-2 lg:order-1">
+            <div className="section-04-gradient absolute lg:static inset-0 lg:inset-auto w-full lg:w-[570px] h-full lg:h-auto flex flex-col justify-start py-10 px-6 lg:py-[140px] lg:px-[68px] gap-7 lg:ml-[75px] z-10 pointer-events-auto">
               {/* First paragraph */}
               <p
                 className="text-base sm:text-lg md:text-xl lg:text-xl xl:text-[22px] leading-relaxed"
@@ -250,13 +243,14 @@ export default function AmenitiesPage() {
           </div>
 
           {/* Right image - 60% */}
-          <div className="lg:col-span-3 relative h-[854px] lg:h-full lg:min-h-[854px] order-1 lg:order-2">
+          <div className="lg:col-span-3 relative w-full h-[854px] lg:h-full lg:min-h-[854px] order-1 lg:order-2">
             <Image
-              src="/assets/amenities/amenities-2.png"
+              src="/assets/amenities/amenities-2-new.png"
               alt="Building architecture"
               fill
-              className="object-cover"
+              className="object-cover object-center"
               priority
+              // sizes="(max-width: 1024px) 100vw, 60vw"
             />
           </div>
         </div>

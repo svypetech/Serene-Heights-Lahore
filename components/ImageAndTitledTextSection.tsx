@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 interface ImageWithTitledTextSectionProps {
   imageUrl: string;
   imageAlt: string;
@@ -22,10 +24,12 @@ export default function ImageWithTitledTextSection({
       <div className="flex flex-col md:grid md:grid-cols-2 md:min-h-screen">
         {/* Left Section - Image (top on mobile) */}
         <div className="relative w-full min-h-[400px] h-[60vh] md:h-auto flex items-center justify-center bg-white">
-          <img
+          <Image
             src={imageUrl}
             alt={imageAlt}
-            className="object-fill w-full h-full"
+            width={1000}
+            height={1000}
+            className="object-cover w-full h-full"
           />
           {/* Overlay Text */}
           {imageOverlayText && (

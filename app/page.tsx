@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <div className="w-full">
       {/* Section 01 */}
-      <section className="relative w-full h-screen flex flex-col overflow-hidden">
+      <section className="relative z-10 w-full h-[55vh] flex flex-col">
         {/* Top Section - Background with Logo and Text */}
         <div className="h-[55vh]">
-          <HeroSection 
+          <HeroSection
             showLogo={false}
             heading="A NEW STANDARD OF"
             subheading="URBAN LIVING"
@@ -24,7 +24,7 @@ export default function Home() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="absolute z-20 right-4 top-[calc(55vh-30px)] sm:right-6 sm:top-[calc(55vh-36px)] lg:right-24 lg:top-[calc(55vh-56px)] xl:right-28 xl:top-[calc(55vh-64px)]"
+          className="absolute z-20 right-4 top-[calc(55vh-30px)] sm:top-[calc(65vh-30px)] sm:right-6 lg:right-24 lg:top-[calc(55vh-56px)] xl:right-28 xl:top-[calc(55vh-64px)]"
         >
           <Image
             src="/assets/home/lda-approved.png"
@@ -34,16 +34,21 @@ export default function Home() {
             className="w-16 sm:w-20 lg:w-28 xl:w-32 h-auto drop-shadow-2xl md:pt-0 pt-10"
           />
         </motion.div>
+      </section>
 
-        {/* Bottom Section - Building Image */}
-        <div className="relative h-[45vh]">
-          <Image
-            src="/assets/home/building-1.jpg"
-            alt="Serene Heights Building"
-            fill
-            className="object-cover object-center"
-            priority
-          />
+      <section>
+        {/* Bottom Section - Building Video */}
+        <div className="flex relative h-screen bg-transparent items-center justify-center">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full md:object-fill object-cover"
+          >
+            <source src="/assets/home/hero.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </section>
 
@@ -51,15 +56,19 @@ export default function Home() {
       <section className="relative w-full bg-white">
         <div className="relative h-screen min-h-[600px] overflow-hidden">
           <Image
-            src="/assets/home/building-2.png"
+            src="/assets/home/building-2-new.png"
             alt="Serene Heights - prime address"
+            quality={75}
             fill
             className="object-cover object-center"
             priority
           />
 
-          {/* Optional dark overlay for shade */}
-          <div className="absolute inset-0 bg-black/30" />
+          {/* Dark gradient shadow on top of the image */}
+          <div className="absolute top-0 left-0 w-full h-[60%] bg-gradient-to-b from-black/90 via-black/30 to-transparent" />
+
+          {/* Optional subtle overlay for the rest of the image */}
+          <div className="absolute inset-0 bg-black/10" />
 
           {/* Overlay text at top, right below shade */}
           <div className="absolute top-0 left-0 w-full flex flex-col items-center pt-16 md:pt-24 lg:pt-32">
@@ -143,7 +152,7 @@ export default function Home() {
               sizes="100vw"
               className="object-contain object-bottom"
               priority
-              // quality={100}
+            // quality={100}
             />
           </div>
           {/* Desktop image: object-contain for md/lg, object-cover for xl+, fills section height */}
@@ -155,7 +164,7 @@ export default function Home() {
               sizes="900px"
               className="object-contain xl:object-cover object-center"
               priority
-              // quality={100}
+            // quality={100}
             />
           </div>
         </div>
@@ -172,7 +181,7 @@ export default function Home() {
 
             <div className="absolute left-1/2 -translate-x-1/2 top-4 w-[90%] h-[68%] z-10">
               <Image
-                src="/assets/home/building-4.jpg"
+                src="/assets/home/building-4-new.png"
                 alt="Building Side View"
                 fill
                 className="object-cover object-top rounded-none"
@@ -195,7 +204,7 @@ export default function Home() {
           {/* Desktop left image: centered horizontally, slightly lowered */}
           <div className="hidden md:block absolute left-1/2 -translate-x-1/2 w-[88%] md:h-[76%] lg:h-[74%] xl:h-[76%] max-w-[720px] z-10 md:top-12 lg:top-10 xl:top-9">
             <Image
-              src="/assets/home/building-4.jpg"
+              src="/assets/home/building-4-new.png"
               alt="Building Side View"
               fill
               className="object-contain object-top rounded-none"
@@ -214,17 +223,19 @@ export default function Home() {
         {/* Right half: full-height natural image on mobile, cover on desktop */}
         <div className="relative w-full md:h-full z-0">
           <Image
-            src="/assets/home/building-5.jpg"
+            src="/assets/home/building-8-new.png"
             alt="Building Front View"
             width={1200}
             height={1900}
+            quality={75}
             className="md:hidden w-full h-auto object-contain"
             priority
           />
           <Image
-            src="/assets/home/building-5.jpg"
+            src="/assets/home/building-8-new.png"
             alt="Building Front View"
             fill
+            quality={75}
             className="hidden md:block object-cover object-center"
             priority
           />
@@ -299,18 +310,20 @@ export default function Home() {
         {/* Left image below on mobile */}
         <div className="relative w-full h-full order-2 md:order-1 md:w-1/2">
           <Image
-            src="/assets/home/building-6.png"
+            src="/assets/home/building-6-new.png"
             alt="Benchmark Building"
+            quality={75}
             width={1200}
             height={1900}
             className="md:hidden w-full h-auto object-contain"
             priority
           />
           <Image
-            src="/assets/home/building-6.png"
+            src="/assets/home/building-6-new.png"
             alt="Benchmark Building"
+            quality={75}
             fill
-            className="hidden md:block object-cover object-left"
+            className="hidden md:block object-cover object-center"
             priority
           />
         </div>
@@ -321,7 +334,7 @@ export default function Home() {
         {/* Left: Building image takes ~60% width */}
         <div className="relative w-full h-full order-2 md:order-1 md:h-full">
           <Image
-            src="/assets/home/building-7.png"
+            src="/assets/home/building-7-new.png"
             alt="Serene Heights Perspective"
             width={1200}
             height={1900}
@@ -329,10 +342,10 @@ export default function Home() {
             priority
           />
           <Image
-            src="/assets/home/building-7.png"
+            src="/assets/home/building-7-new.png"
             alt="Serene Heights Perspective"
             fill
-            className="hidden md:block object-cover object-left"
+            className="hidden md:block object-cover object-center"
             priority
           />
         </div>
@@ -380,17 +393,12 @@ export default function Home() {
         {/* Background image */}
         <div className="absolute inset-0 bottom-3 top-3">
           <Image
-            src="/assets/home/building-8-cropped.png"
+            src="/assets/home/building-8-new.png"
             alt="Luxury that rises with purpose"
             fill
-            className="sm:hidden object-cover object-center"
-            priority
-          />
-          <Image
-            src="/assets/home/building-8.png"
-            alt="Luxury that rises with purpose"
-            fill
-            className="hidden sm:block object-cover object-center"
+            sizes="100vw"
+            quality={75}
+            className="object-cover object-center"
             priority
           />
         </div>
@@ -412,7 +420,7 @@ export default function Home() {
           }}
         >
           <div
-          className="text-size"
+            className="text-size"
             style={{
               fontFamily: "Celine Sans Regular, sans-serif",
               fontWeight: 400,
@@ -425,7 +433,7 @@ export default function Home() {
             LUXURY THAT RISES WITH PURPOSE
           </div>
         </div>
-        
+
         <style>{`
           @media (min-width: 768px) {
             .luxury-panel {

@@ -15,7 +15,7 @@ export default function TheProjectPage() {
       </section>
 
       <ImageWithTitledTextSection
-        imageUrl="/assets/project/Image1.png"
+        imageUrl="/assets/project/image-1-new.png"
         imageAlt="DM Consortium Interior"
         // imageOverlayText="With over 18 years of experience in Dubai’s real estate industry, Falah Developers is built on these values with a commitment to delivering projects that clients can trust, depend on, and take pride in."
         title="PROJECT OVERVIEW"

@@ -46,7 +46,7 @@ commercial occupiers. With direct access from major arterial road and proximity 
             { label: "LOWER GROUND +3", description: "COMMERCIAL FLOORS" },
             { label: "4", description: "PARKING FLOORS" },
             { label: "2 FLOORS", description: "HOTEL APARTMENTS" },
-            { label: "3 FLOORS", description: "MULTIPLE OFFICES" },
+            { label: "6 FLOORS", description: "MULTIPLE OFFICES" },
             { label: "TOP 2 FLOORS", description: "DUPLEX PENTHOUSES" },
           ]}
         />
@@ -87,7 +87,7 @@ commercial occupiers. With direct access from major arterial road and proximity 
 
       <TextWithImageSection
         heading="OFFICE FLOORS"
-        subheadingKey="X3"
+        subheadingKey="X6"
         subheadingValue="OFFICE FLOORS"
         paragraph1="Located at the heart of Lahore’s most active commercial district, the office floors offer businesses an address that delivers visibility, accessibility, and influence. Operating from Gulberg’s central corridor places your business within immediate reach of key clients, partners, and decision-makers."
         paragraph2="This strategic positioning enhances brand presence, improves operational efficiency, and provides a competitive edge."

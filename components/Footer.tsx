@@ -33,8 +33,8 @@ const contactInfo = [
   },
   {
     icon: '/assets/footer/call.svg',
-    lines: ['0300-8497999', 'For Co-Working / Hotel Apartments'],
-    href: 'tel:0300-8497999',
+    lines: ['0321-4979446', 'For Co-Working / Hotel Apartments'],
+    href: 'tel:0321-4979446',
   },
   {
     icon: '/assets/footer/sms.svg',
